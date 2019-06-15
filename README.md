@@ -70,7 +70,7 @@ DATEEND = data fim da busca.
 URL: /api/rule/create
 METHOD: POST
 ```
-No endepoint de cadastro de regras, o mesmo aceita três tipos de regras, **SEMANAL**, **ESPECIFICA** e **DIARIA**, no formado dos JSON abaixo.
+No endepoint de cadastro de regras, o mesmo aceita três tipos de regras, **SEMANAL**, **ESPECÍFICA** e **DIÁRIA**, no formado dos JSON abaixo.
 
 #### SEMANAL
 
