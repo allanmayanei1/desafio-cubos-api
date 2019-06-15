@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "1959969e-c810-464e-bcf4-4f06e8228acf",
+		"name": "Desafio Cubos 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cadastrar regra semanal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" :0,\n\t\"type\": \"semanal\",\n\t\"dayWeek\" : [ 0 , 6],\n\t\"startTime\" : \"14:00\",\n\t\"endTime\" :\"15:40\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/rule/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"rule",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar regra especifico",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" :0,\n\t\"type\": \"especifico\",\n\t\"date\": \"22-12-2019\",\n\t\"startTime\" : \"15:40\",\n\t\"endTime\" :\"17:50\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/rule/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"rule",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar regra diaria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"type\": \"diaria\",\n\t\"startTime\" : \"08:40\",\n\t\"endTime\" :\"10:50\"\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/rule/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"rule",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar regra",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/rule/delete/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"rule",
+						"delete",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar todas regras",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/rule/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"rule",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista horarios disponíveis",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/rule/rulesAvailable/20-12-2019/22-12-2019",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"rule",
+						"rulesAvailable",
+						"20-12-2019",
+						"22-12-2019"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

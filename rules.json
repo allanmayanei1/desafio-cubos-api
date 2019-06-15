@@ -1,0 +1,29 @@
+[
+    {
+        "id" :0,
+        "type": "semanal",
+        "date": "2018-12-12",
+        "dayWeek" : [ 1 , 6],
+        "startTime" : "12:40",
+        "endTime" :"12:40"
+        
+    },
+    {
+        "id" :0,
+        "type": "semanal",
+        "date": "2018-12-12",
+        "dayWeek" : [ 1 , 6],
+        "startTime" : "12:40",
+        "endTime" :"12:40"
+        
+    },
+    {
+        "id" :0,
+        "type": "semanal",
+        "date": "2018-12-12",
+        "dayWeek" : [ 1 , 6],
+        "startTime" : "12:40",
+        "endTime" :"12:40"
+        
+    }
+]
